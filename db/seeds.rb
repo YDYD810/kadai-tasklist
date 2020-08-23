@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+array = ["未", "済"]
+(1..10).each do |number|
+    Task.create(content: 'test content' + number.to_s, status: array.sample)
+end 
