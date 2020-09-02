@@ -4,7 +4,6 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>id</th>
         <th>タスク</th>
         <th>ステータス</th>
       </tr>
@@ -12,8 +11,7 @@
     <tbody>
       <% @tasks.each do |task| %>
     　<tr>
-    　 <td><%= link_to task.id, task %></td>
-    　 <td><%=task.content %></td>
+    　 <td><%= link_to task.content, task %></td>
     　 <td><%= task.status %></td>
     　</tr>
     <% end %>
